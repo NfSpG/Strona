@@ -1,0 +1,102 @@
+
+<html>
+ <head>
+        <title>JUMP!</title>
+   
+ </head>
+       <link rel="stylesheet" href="styl.css"/>
+   <body>
+
+   <header>
+        <nav>
+                <ul>
+                    <li><a href="index.html">Główna</a></li>
+                    <li><a href="loty.html">Loty</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+      
+             </nav>
+
+    
+       <h2>Aktualny cennik lotów</h2>
+   
+   </header>
+ 
+  
+  
+ 
+  
+   
+     <table id="cennik">
+     <tr>
+         <th>Statek</th>
+         <th>Miejsce</th>
+         <th>Trunk Class</th>
+         <th>Eco Class</th>
+         <th>Bussines Class</th>
+         <th>Asheikh Class</th>
+        
+     </tr>
+     <tr>
+      <td>Boeing-SF15</td>
+      <td>Mars</td>
+      <td>500zł</td>
+      <td>1000zł</td>
+      <td>2000zł</td>
+      <td>3000zł</td>
+     </tr>
+     <tr>
+        <td>Boeing-SF15</td>
+        <td>Jowisz-kolonie</td>
+        <td>1000zł</td>
+        <td>2000zł</td>
+        <td>3000zł</td>
+        <td>5000zł</td>
+       </tr>
+       <tr>
+        <td>GalacticEagle-1</td>
+        <td>Proxima Centauri</td>
+        <td>2500zł</td>
+        <td>4000zł</td>
+        <td>7000zł</td>
+        <td>8000zł</td>
+       </tr>
+  
+  
+     </table>
+
+     <h1 id="bilet">Kup Bilet </h1>
+
+     <form>
+        <fieldset>
+          <div>
+          <label><input type="radio" id="r1"  name="bilety" checked>Mars</label>
+          <label><input type="radio"  id="r2" name="bilety" >Jowisz-kolonie</label>
+          <label><input type="radio"  id="r3" name="bilety" >Proxima Centauri</label>
+          </div>
+        </fieldset>
+     </form>
+ 
+     <h1 id="miejsca">Wybierz Miejsce </h1>
+
+    <form>
+      <fieldset>
+        <div>
+          <label><input type="radio" id="r4" name="miejsce"  checked>Trunk Class</label>
+          <label><input type="radio"  id="r5" name="miejsce" >Eco Class</label>
+          <label><input type="radio"  id="r6" name="miejsce" >Bussines Class</label>
+          <label><input type="radio" id="r"  name="miejsce" >Asheikh Class</label>
+        </div>
+      </fieldset>
+     </form>
+     <button onclick="wybierz()">Zatwierdz</button>
+
+     <p id="zatwierdz"></p>
+     
+     <script>
+     function wybierz() {
+       document.getElementById("zatwierdz").innerHTML = "Bilet na dzień 16.04.2077 został wybrany";
+     }
+     </script>
+   </body>
+ </html>
